@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stroll_app/presentation/stroll_bonfire_page.dart';
+import 'package:stroll_app/presentation/stroll_bonfire_screen.dart';
 
 void main() {
   runApp(const MyApp());
