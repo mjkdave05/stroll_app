@@ -39,7 +39,7 @@ class PollWidget extends StatelessWidget {
                       mainAxisSpacing: 12.0,
                       childAspectRatio: 2.8, // Adjusted for proper option layout
                     ),
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(8.0),
                     itemBuilder: (context, index) {
                       final option = viewModel.pollOptions[index];
                       final isSelected = option.isSelected;
@@ -76,19 +76,19 @@ class PollWidget extends StatelessWidget {
                                   '${String.fromCharCode(65 + index)}', // A, B, C, D
                                   style: TextStyle(
                                     color: isSelected ? Colors.white : Colors.grey[500]!, // White text when selected
-                                    fontSize: 14.0,
+                                    fontSize: 12.0,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
-                              SizedBox(width: 12.0),
+                              SizedBox(width: 10.0),
                               // Poll Option Text
                               Expanded(
                                 child: Text(
                                   option.option,
                                   style: TextStyle(
                                     color: isSelected ? Colors.white : Colors.grey[300], // Text color for selected and unselected
-                                    fontSize: 14.0,
+                                    fontSize: 12.0,
                                     height: 1.3, // Line height for wrapping text
                                   ),
                                 ),
@@ -102,7 +102,7 @@ class PollWidget extends StatelessWidget {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
