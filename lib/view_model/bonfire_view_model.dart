@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../model/bonfire_model.dart';
+
 class BonfireViewModel extends ChangeNotifier {
-  final User user = User(name: 'Angelina', age: 28, profileImage: 'assets/angelina.png');
 
   final List<PollOption> pollOptions = [
     PollOption(option: 'The peace in the early mornings'),
